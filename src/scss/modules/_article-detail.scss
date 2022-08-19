@@ -1,0 +1,242 @@
+.article-detail {
+  display: flex;
+  flex-direction: column;
+  max-width: 848px;
+}
+
+.article-detail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-detail h2 {
+  margin: 0;
+  padding: 0;
+  color: $black;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: $titleFont;
+  line-height: 20px;
+
+  @include atTablet {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.article-detail__intro {
+  margin: 0 0 30px;
+  font-size: 14px;
+  font-family: $mainFont;
+  line-height: 1.3;
+}
+
+.article-detail .full-width {
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.article-detail__header {
+  align-self: center;
+  // box model
+  margin-bottom: 20px;
+
+  @include atDesktopS {
+    margin-bottom: 30px;
+  }
+}
+
+.article-detail__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include atDesktopL {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.article-detail__img-wrap {
+  width: 100%;
+
+  @include atTablet {
+    flex-shrink: 0;
+    width: 340px;
+  }
+}
+
+.article-detail__img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 8px 8px 12px #ccc;
+}
+
+.article-detail__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 20px;
+
+  @include atDesktopS {
+    padding: 20px;
+  }
+
+  @include atDesktopL {
+    padding: 20px;
+    padding-top: 0;
+  }
+}
+
+.article-detail__info-desc {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  color: $black;
+  font-weight: 400;
+  font-size: 10px;
+  font-family: $mainFont;
+  line-height: 18px;
+
+  @include atTablet {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.article-detail__favorite p,
+.download_archive a {
+  margin: 0;
+  color: $browm;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+
+  @include atTablet {
+    font-size: 16px;
+  }
+}
+
+.download_archive a {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.article-detail__favorite {
+  display: flex;
+  min-width: 240px;
+  margin-bottom: 20px;
+}
+
+.article-detail__favorite .article-preview__button {
+  margin-top: 0;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.article__print {
+  padding: 0;
+  list-style: none;
+}
+
+.article__doc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 44px;
+  margin-bottom: 16px;
+  padding: 0 20px;
+  background-color: $bianca;
+  border: 1px solid $lightBrown;
+  border-radius: 21px;
+}
+
+.article__doc span {
+  display: block;
+  padding-right: 20px;
+  color: $black;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 1.2;
+
+  @include atTablet {
+    font-size: 11px;
+  }
+}
+
+.article__doc a {
+  display: block;
+  color: $browm;
+  font-weight: 700;
+  font-size: 9px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include atTablet {
+    font-size: 12px;
+  }
+}
+
+.article-detail__list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.article-detail__item {
+  position: relative;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: $mainFont;
+  line-height: 1.4;
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+  &::before {
+    position: absolute;
+    top: 4px;
+    left: -25px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(./images/deco/romb.svg) center center/contain no-repeat;
+    content: '';
+  }
+}
+
+.article-detail__link {
+  color: $browm;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.2s linear;
+
+  &:hover {
+    color: $darkGold;
+  }
+
+  &:active {
+    color: $lightGrey;
+  }
+}

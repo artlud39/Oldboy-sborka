@@ -1,0 +1,13 @@
+section.video
+  h3.video__title Видео 2
+  .video__content
+    video.video__iframe.video__iframe--video-js(controls controlsList="nodownload" poster="")
+      source(src="https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4", type="video/mp4")
+    button.video__play.video__play--btn-play-js(aria-label="Запустить видео")
+      <svg class="video__play-shape" width="75" height="88" viewBox="0 0 75 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="video__play-icon" d="M75 44L-4.07833e-06 87.3013L-2.92811e-07 0.698727L75 44Z" fill="white"/>
+      </svg>
+    .video__btn-group
+      button.video__btn-previous previous
+      button.video__btn-next next
+  p.video__description Какое нибудь описание под видео,необязательно длинное, или вообще необязательно описание,но место вот оно.

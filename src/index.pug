@@ -1,12 +1,18 @@
-doctype html
+<!DOCTYPE html>
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  meta(name="viewport" content="width=device-width, initial-scale=1.0")
-  link(rel="stylesheet", href="css/style.min.css")
-  script(src='./js/main.min.js' defer)
-  title Oldboy Wiki
-body
-  main
-    div(id='app-root')
+  include html/modules/_head.pug
+
+  body
+    .wrapper
+      include html/modules/education/_header-search-education.pug
+      main
+        div.container
+          div.container__menu
+            include html/modules/education/_menu-education.pug
+          //- content
+          div.container__info
+            include html/modules/education/_navigation-chain.pug
+            //- include html/modules/education/_menu-page-education.pug
+            div(id="app-root")
+
+      include html/modules/_footer.pug

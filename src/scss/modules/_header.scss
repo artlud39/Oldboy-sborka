@@ -1,0 +1,97 @@
+.header {
+  // box model
+  height: 263px;
+  margin-bottom: 60px;
+  padding: 20px 0;
+  overflow: hidden;
+  // visual
+  background-color: $dark;
+  background-image: url('../../images/deco/grunge-header.svg');
+  background-repeat: no-repeat;
+  background-position: top 233px center;
+
+  @include atTablet {
+    // box model
+    padding: 40px 0;
+    // visual
+    background-image: url('../../images/deco/grunge-header.svg'), url('../../images/deco/background-header.jpg');
+    background-position: top 210px center, center;
+  }
+
+  @include atDesktopS {
+    // visual
+    background-position: top 230px center, center;
+  }
+}
+
+.header__wrapper {
+  // box model
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+
+  @include atTablet {
+    // box model
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 0 40px;
+  }
+
+  @include atDesktopS {
+    // box model
+    padding: 0 110px;
+  }
+}
+
+.header__logo {
+  // box model
+  margin-bottom: 20px;
+}
+
+.header__logo--adaptive {
+  width: 30%;
+}
+
+.header__img {
+  width: 100%;
+}
+
+.header__search {
+  width: 40%;
+}
+
+.header__button {
+  // box model
+  width: 224px;
+
+  &::before {
+    position: relative;
+    right: 15px;
+    width: 32px;
+    height: 30px;
+    // visual
+    background-image: url('../../images/icons/account.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    // box model
+    content: '';
+  }
+}
+
+.header__button--exit {
+  // box model
+  height: 48px;
+  margin-top: 18px;
+  // visual
+  background: transparent;
+
+  &::before {
+    // box model
+    display: none;
+  }
+}

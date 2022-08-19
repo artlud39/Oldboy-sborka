@@ -1,0 +1,24 @@
+section.constructor
+  div.constructor__nav
+    a.constructor__nav-main-link(href="index.html") Вернуться на главную
+    div.constructor__nav-wrap
+      h1.constructor__nav-title Конструктор профилей соцсетей
+      p.constructor__mobile Конструктор доступен в браузерах для ПК.
+      p.constructor__text.constructor__text--nav Здесь вы сможете легко и наглядно выбрать и сохранить <span class="constructor__nav-newline"></span> всё необходимое для оформления ваших социальных сетей. <span class="constructor__nav-newline"></span> Просто переключайтесь между элементами, оставляя те что вам подходят, а потом нажмите на кнопку “Добавить в избранное” в конце страницы.
+      ul.constructor__nav-list
+        li.constructor__nav-item
+          a.constructor__nav-toggle-link.constructor__nav-toggle-link--active ВК Десктоп
+        li.constructor__nav-item
+          a.constructor__nav-toggle-link ВК Мобильланя
+
+  ul.constructor__list
+    li.constructor__item.constructor__item--active
+      include _vk-desktop.pug
+    li.constructor__item
+      include _vk-mobile.pug
+
+  div.constructor__favorite.constructor__favorite--disable
+    p.constructor__text.constructor__text--favorite Если вы определились со всеми элементами и готовы сохранить их архивом в свой “Личный кабинет”,  нажмите кнопку ниже.
+    div.constructor__favorite-wrap
+      button.button.constructor__button Добавить в избранное
+      button.button.constructor__button Добавить в избранное

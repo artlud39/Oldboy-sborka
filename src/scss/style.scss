@@ -1,24 +1,74 @@
-// @import 'fonts'
+// global
+@import 'base/normalize';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/globals';
+// fonts
+@import 'fonts/fonts';
 
-body {
-  background-color: black;
-  background-image: url('@img/1.jpeg');
-  background-position: 0 0;
-  background-repeat: no-repeat;
+/* modules */
+@import 'modules/group-video';
+@import 'modules/video';
 
-  h1 {
-    color: goldenrod;
-  }
-}
+// container
+@import 'modules/wrapper';
+@import 'modules/container';
+@import 'modules/container-test';
+// button
+@import 'modules/button';
+// header
+@import 'modules/header';
+@import 'modules/header-search';
+// header search
+@import 'modules/search';
+// footer
+@import 'modules/footer';
+// menu
+@import 'modules/menu';
+@import 'modules/new-menu';
 
-@media (max-width:768px) {
-  h1 {
-    color: blue;
-  }
-}
+@import 'modules/menu-decor';
+// page authorization
+@import 'modules/page-authorization';
+// authorization
+@import 'modules/authorization';
+// main-page
+@import 'modules/main-page';
 
-@media (max-width:768px) {
-  body {
-    background-color: aqua;
-  }
-}
+@import 'modules/personal';
+
+@import 'modules/article-section';
+
+@import 'modules/article-preview';
+
+@import 'modules/article-detail';
+
+@import 'modules/menu-switcher';
+// constructor
+@import 'modules/constructor';
+// constructor vk-desctop
+@import 'modules/vk-desktop';
+// constructor vk-mobile
+@import 'modules/vk-mobile';
+// constructor insta
+@import 'modules/insta';
+// constructor gallery
+@import 'modules/gallery';
+
+@import 'modules/sections';
+
+@import 'modules/construct';
+@import 'modules/vertical-menu';
+
+@import 'modules/menu-education';
+@import 'modules/header-education';
+
+@import 'modules/i-barber';
+
+@import 'modules/pro-offer';
+
+@import 'modules/pro-service';
+@import 'modules/test-counter';
+@import 'modules/test';
+@import 'modules/test-result';
+@import 'modules/navigation-chain';

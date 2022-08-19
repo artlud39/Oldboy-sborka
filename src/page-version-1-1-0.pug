@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="ru")
+  include html/modules/_head.pug
+
+  body
+    include html/modules/_header-search.pug
+    main
+      div.container.container--large.container--flex
+        include html/modules/_menu.pug
+        div.container.container--middle
+          //- content
+          include html/modules/versions/_version-1-1-0.pug
+
+    include html/modules/_footer.pug
+
+//- script(src="menu.js")
+//- script(src="main.js")

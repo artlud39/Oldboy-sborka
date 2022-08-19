@@ -1,0 +1,256 @@
+.insta {
+  position: relative;
+  width: 920px;
+}
+
+.insta__phone {
+  position: relative;
+  z-index: 1;
+  width: 578px;
+  height: 554px;
+  margin: 0 auto;
+  padding: 0 62px;
+  padding-top: 30px;
+  background-image: url('./images/deco/phone-w578.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.insta__bang-phone {
+  position: absolute;
+  top: 28px;
+  left: 27%;
+  z-index: 2;
+  width: 260px;
+  height: 36px;
+  background-image: url('./images/deco/bang-phone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.insta__screen {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 522px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $light-vk;
+  border-top-left-radius: 49px;
+  border-top-right-radius: 49px;
+}
+
+.insta__container {
+  margin: 0 auto;
+}
+
+.insta__header-phone {
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  width: 403px;
+  height: 60px;
+  background-image: url('./images/deco/header-phone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.insta__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 20px;
+  padding-top: 50px;
+  background-color: $light;
+}
+
+.insta__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.insta__header-icon {
+  width: 12px;
+  height: 21px;
+  background-image: url('./images/icons/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.insta__header-text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.insta__header-dots {
+  width: 24px;
+  height: 21px;
+  background-image: url('./images/icons/dots.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.insta__avatar-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.insta__avatar-link {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-color: $blue-vk;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px 4px $black;
+  }
+}
+
+.insta__avatar-img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.insta__avatar-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280px;
+  padding: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.insta__avatar-item {
+  width: 80px;
+  height: 40px;
+  background-color: $lightGrey;
+  border-radius: 4px;
+}
+
+.insta__mid {
+  width: 100%;
+  padding: 13px 20px;
+  background-color: $light;
+}
+
+.insta__text {
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.insta__mid-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style: none;
+}
+
+.insta__mid-item {
+  margin-top: 10px;
+}
+
+.insta__stick {
+  display: block;
+  width: 50%;
+  height: 10px;
+  background-color: $lightGrey;
+
+  &--blue {
+    background-color: $blue-vk;
+  }
+}
+
+.insta__btn-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-top: 31px;
+  padding: 0;
+  list-style: none;
+}
+
+.insta__mid-btn {
+  width: 185px;
+  height: 37px;
+  background-color: transparent;
+  border: 2px solid $lightGrey;
+  border-radius: 8px;
+}
+
+.insta__mid-btn--small {
+  position: relative;
+  width: 37px;
+  background-image: url('./images/icons/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 40% center;
+  background-size: 20%;
+  transform: rotate(270deg);
+}
+
+.insta__topical {
+  width: 100%;
+  padding: 13px 20px;
+  background-color: $light;
+}
+
+.insta__topical-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+.insta__topical-item {
+  width: 70px;
+  height: 70px;
+  background-color: $browm;
+  border-radius: 50%;
+}
+
+.insta__topical-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.insta__topical-list:hover .insta__topical-link,
+.insta__topical-list:focus .insta__topical-link {
+  box-shadow: 0 0 5px 3px $black;
+}
+
+.insta__topical-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insta__gallery {
+  position: relative;
+  z-index: 0;
+  width: 850px;
+}

@@ -1,0 +1,78 @@
+// breakpoints
+
+// tablets portrait
+@mixin atTablet {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+// small desktop and tablets landscape
+@mixin atDesktopS {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+// medium desktop and generic laptops
+@mixin atDesktopM {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin atDesktopL {
+  @media (min-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin atDesktopСlearance {
+  @media (min-width: 1700px) {
+    @content;
+  }
+}
+
+@mixin atFullHD {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin atUltraHD {
+  @media (min-width: 2540px) {
+    @content;
+  }
+}
+
+// custom breakpoints for buttons at featured location
+@mixin atFeatured450 {
+  @media (min-width: 450px) {
+    @content;
+  }
+}
+
+@mixin atFeatured600 {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+// breakpoint for old phones
+@mixin atSmallMobile {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
+// =========================================================================
+@mixin clearListStyles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin clearLinkDecoration {
+  text-decoration: none;
+  color: inherit;
+}

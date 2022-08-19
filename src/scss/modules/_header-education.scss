@@ -1,0 +1,191 @@
+.header-search-education {
+  position: relative;
+  z-index: 10;
+  // box model
+  min-height: 450px;
+  padding: 20px 0;
+  overflow: hidden;
+  // visual
+  background-color: $dark;
+  background-image: url('../../images/deco/background-header-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @include atTablet {
+    // box model
+    min-height: 300px;
+    padding: 40px 0;
+    // visual
+    background-image: url('../../images/deco/background-header-tablet.jpg');
+    background-position: 0 0;
+  }
+
+  @include atDesktopS {
+    // visual
+    min-height: 234px;
+    background-image: url('../../images/deco/background-header-desktop.jpg');
+    background-position: 0 0;
+  }
+}
+
+.header-search-education__wrapper {
+  position: relative;
+  // box model
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include atTablet {
+    // box model
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 0 40px;
+  }
+
+  @include atDesktopS {
+    flex-wrap: nowrap;
+  }
+
+  @include atDesktopL {
+    // box model
+    padding: 0;
+  }
+}
+
+.header-search-education__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @include atTablet {
+    margin-bottom: 0;
+  }
+}
+
+.header-search-education__img {
+  // box model
+  width: 145px;
+  height: 90px;
+
+  @include atTablet {
+    // box model
+    width: 250px;
+    height: 134px;
+  }
+
+  @include atDesktopS {
+    // box model
+    height: 106px;
+  }
+
+  @include atDesktopL {
+    // box model
+    height: 136px;
+  }
+}
+
+.header-search-education__search {
+  flex-grow: 1;
+  align-self: center;
+  order: 1;
+  min-width: 280px;
+  max-width: 600px;
+
+  @include atTablet {
+    flex-grow: 0;
+    align-self: flex-start;
+    // box model
+    width: 600px;
+    margin: 0 20px;
+    padding-top: 21px;
+  }
+
+  @include atDesktopS {
+    flex-grow: 1;
+    // box model
+    order: 0;
+    max-width: 500px;
+    padding-top: 3px;
+  }
+
+  @include atDesktopL {
+    // box model
+    padding-top: 11px;
+  }
+}
+
+.header-search-education__menu {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 120px;
+
+  @include atTablet {
+    order: 0;
+    // box model
+    width: 240px;
+    margin: 0;
+  }
+
+  @include atDesktopS {
+    // box model
+    max-width: 270px;
+  }
+}
+
+.header-search-education__button {
+  // box model
+  width: 100%;
+  height: 44px;
+  padding: 0;
+  // typography
+  font-size: 10px;
+  line-height: 10px;
+
+  @include atDesktopS {
+    // typography
+    font-size: 14px;
+    line-height: 19px;
+
+    &::before {
+      position: relative;
+      right: 21px;
+      display: block;
+      width: 32px;
+      height: 30px;
+      // visual
+      background-image: url('../../images/icons/account.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      // box model
+      content: '';
+    }
+  }
+
+  &::before {
+    // box model
+    display: none;
+  }
+}
+
+.header-search-education__button--exit {
+  // box model
+  margin-top: 18px;
+  // typography
+  color: $light;
+  // visual
+  background: transparent;
+  border-color: $light;
+
+  &::before {
+    // box model
+    display: none;
+  }
+}

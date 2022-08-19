@@ -1,5 +1,6 @@
 import fs from 'fs'
-import fonter from 'gulp-fonter'
+// import fonter from 'gulp-fonter'
+import fonterMac from 'gulp-fonter-unx'
 import ttf2woff2 from 'gulp-ttf2woff2'
 
 export const otfToTtf = () => {
@@ -12,7 +13,7 @@ export const otfToTtf = () => {
       })
     ))
     // Конвертайция в .ttf
-    .pipe(fonter({
+    .pipe(fonterMac({
       formats: ['ttf']
     }))
     .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`))
@@ -28,7 +29,7 @@ export const ttfToWoff = () => {
       })
     ))
     // Конвертайция в .woff
-    .pipe(fonter({
+    .pipe(fonterMac({
       formats: ['woff']
     }))
     .pipe(app.gulp.dest(app.path.build.fonts))

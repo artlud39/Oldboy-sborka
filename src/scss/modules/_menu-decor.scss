@@ -1,0 +1,33 @@
+.menu-decor {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-88%);
+  transition: transform .3s linear;
+
+  // visual
+  background-color: #fbf6ee;
+
+  @include atDesktopS {
+    position: relative;
+    width: auto;
+    transform: translateY(0%);
+    padding: 10px;
+  }
+}
+
+.menu-decor.menu-decor--opened {
+  transform: translateY(0%);
+}
+
+.button__menu-text {
+  margin-right: 10px;
+}
+
+.button__menu-icon._up {
+  transform: rotate(180deg);
+}

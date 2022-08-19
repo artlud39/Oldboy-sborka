@@ -34,10 +34,10 @@ function watcher() {
 }
 
 // Обработка шрифтов
-const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
+// const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
 
 // Основные задачи
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, scripts, images))
+const mainTasks = gulp.series(gulp.parallel(copy, html, scss, scripts, images))
 
 // Построение сценариев выполнения задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server))

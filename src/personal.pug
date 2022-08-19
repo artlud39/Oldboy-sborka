@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+html(lang="en")
+  include html/modules/_head.pug
+
+  body
+    include html/modules/_header-search.pug
+    main
+      .container
+        section.personal
+          header.personal__header
+            h2.personal__title Личный кабинет
+            p.personal__subtitle Пользователь:
+            p.personal__name Иван Иванович К.
+            .personal__description
+              p.personal__description-text В данном разделе находятся Файлыкоторые вы сохранили или добавили в избранное
+              p.personal__description-text Для того чтобы перейти к основному каталогу материалов нажмите на
+              a.personal__link(href="#") ссылку
+          .personal__content
+            section.personal__article.personal__article--favorite
+              header.personal__article-header
+                h3.personal__article-title Избранное:
+              .personal__article-content
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete.svg" alt="Удалить")
+
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete.svg" alt="Удалить")
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete.svg" alt="Удалить")
+
+            section.personal__article
+              header.personal__article-header
+                h3.personal__article-title Файлы:
+              .personal__article-content
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete-grey.svg" alt="Удалить")
+
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete.svg" alt="Удалить")
+                article.article-preview
+                  header.article-preview__header
+                    img.article-preview__icon(src="./images/icons/docs/doc.svg" alt="Документ word")
+                    .article-preview__info
+                      h4.article-preview__title Форма трудового договора
+                      p.article-preview__subtitle Форма: Трудовой договор с парикмахером
+                  a.article-preview__button(href="#") Удалить из списка
+                    img.article-preview__button-icon(src="./images/icons/delete.svg" alt="Удалить")
+
+    include html/modules/_footer.pug

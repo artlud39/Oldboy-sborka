@@ -1,0 +1,35 @@
+// colors
+$black: #000;
+$dark: #131313;
+$light: #fff;
+$light-vk: #edeef0;
+$lightGrey: #aeaeae;
+$grey: #6b6969;
+$darkGrey: #6d6d6d;
+$greySearch: #bebebe;
+$grey-vk: #999fa6;
+$browm: #d29c4e;
+$lightBrown: #ebd1a9;
+$bianca: #fbf6ee;
+$golden: #d6a354;
+$goldenLight: #e2b84b;
+$darkGold: #896322;
+$red: rgb(175, 33, 46);
+$blue: rgb(0, 101, 168);
+$blue-vk: #5181b8;
+$amazon: #36775C;
+$brightRed: #AA1727;
+$whiteSmoke: #F5F5F5;
+$silver: #C4C4C4;
+
+$whiteLightness: 100%;
+$white: hsl(0, 0%, $whiteLightness);
+$grey85: hsl(0, 0%, calc(100% - 53%));
+
+// fonts
+$mainFont: 'Open Sans', arial, sans-serif;
+$titleFont: 'Rex', arial, sans-serif;
+$displayFont: 'Rex Bold Inline', arial, sans-serif;
+
+// font-weight
+$fontWeightBold: 700

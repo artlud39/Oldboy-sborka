@@ -1,0 +1,527 @@
+.article {
+  max-width: 800px;
+  margin-bottom: 70px;
+  // box model
+  padding: 20px;
+
+  @include atTablet {
+    margin: 0 auto;
+    margin-bottom: 90px;
+    // box model
+    padding: 40px;
+  }
+
+  @include atDesktopS {
+    // box model
+  }
+
+  @include atDesktopM {
+    // box model
+    max-width: 960px;
+  }
+}
+
+.article h2 {
+  // box model
+  margin: 1rem 0;
+  //max-width: 750px;
+
+  // typography
+  color: $dark;
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-family: $mainFont;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include atDesktopS {
+    // typography
+    line-height: 1.5;
+  }
+
+  @include atDesktopM {
+    // box model
+    //max-width: 850px;
+
+    // typography
+    font-size: 2rem;
+  }
+}
+
+.article h3 {
+  // box model
+  margin: 1rem 0;
+  //max-width: 400px;
+
+  // typography
+  color: $dark;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: $mainFont;
+  line-height: 1.75;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include atDesktopS {
+    font-size: 1.6rem;
+  }
+}
+
+.article h4 {
+  // box model
+  margin: 1rem 0;
+  //max-width: 400px;
+
+  // typography
+  color: $dark;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: $mainFont;
+  line-height: 1.75;
+  text-align: left;
+  text-transform: uppercase;
+
+  @include atDesktopS {
+    // typography
+    font-size: 1.2rem;
+  }
+}
+
+.article p {
+  // box model
+  margin: 1rem 0;
+
+  // typography
+  color: $dark;
+  font-size: 1rem;
+  font-family: $mainFont;
+  line-height: 1.5;
+  text-align: justify;
+
+  @include atDesktopS {
+    // typography
+    line-height: 1.75;
+  }
+
+  @include atDesktopM {
+    // box model
+    margin: 2rem 0;
+
+    // typography
+    font-size: 1.0625rem;
+  }
+}
+
+.article ul {
+  // box model
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+
+  // visual
+  list-style: disc;
+}
+
+.article ol {
+  // box model
+  padding: 0;
+}
+
+.article ul li,
+.article ol li {
+  // positioning
+  position: relative;
+
+  // box model
+  margin-bottom: 15px;
+  margin-left: 15px;
+  font-size: 16px;
+
+  // typography
+  font-family: $mainFont;
+  line-height: 1.75;
+
+  &:last-child {
+    // box model
+    margin-bottom: 0;
+  }
+}
+
+.article__image {
+  // box model
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  object-position: center center;
+
+  // visual
+  border-radius: 5px;
+  //overflow: hidden;
+
+  @include atTablet {
+    // box model
+    max-width: 80%;
+
+    &--left {
+      // box model
+      float: left;
+      max-width: 30%;
+      margin-top: 0;
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    &--right {
+      // box model
+      float: right;
+      max-width: 30%;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 30px;
+    }
+
+    &--small25 {
+      // box model
+      max-width: 25%;
+    }
+  }
+}
+
+.article__image--full {
+  // box model
+  max-width: 100%;
+  img {
+    // visual
+    object-fit: cover !important;
+  }
+}
+
+.article__image img {
+  //box-model
+  display: block;
+  width: 100%;
+  max-height: 260px;
+
+  // visual
+  object-fit: contain;
+
+  @include atTablet {
+    // box model
+    max-height: 450px;
+  }
+
+  @include atDesktopS {
+    // box model
+    max-height: 560px;
+  }
+}
+
+.article figcaption {
+  font-size: 0.85rem;
+  // typography
+  font-family: $mainFont;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.article .quote {
+  // positioning
+  position: relative;
+
+  // box model
+  margin: 1rem -20px;
+  padding: 2rem 20px;
+  padding-top: 4rem;
+
+  // typography
+  text-align: center;
+
+  // visual
+  background-color: $bianca;
+
+  @include atTablet {
+    // box model
+    margin: 1rem -40px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  @include atDesktopS {
+    // box model
+    margin: 1rem -2rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    margin: 1rem -6rem;
+    padding-right: 10rem;
+    padding-bottom: 3rem;
+    padding-left: 10rem;
+  }
+}
+
+.article .quote::before {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+
+  // typography
+  color: $golden;
+  font-size: 6rem;
+  transform: translateX(-50%);
+  content: '”';
+
+  @include atDesktopM {
+    // positioning
+    top: 1rem;
+
+    // typography
+    font-size: 7.5rem;
+  }
+}
+
+.article .quote__text {
+  // box model
+  margin-bottom: 2rem;
+
+  // typography
+  font-family: $titleFont;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1.25rem;
+  }
+}
+
+.article .quote__author {
+  // box model
+  margin: 0;
+
+  // typography
+  font-size: 0.85rem;
+  text-transform: uppercase;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1rem;
+  }
+}
+
+.article .quote__position {
+  // box model
+  margin: 0;
+
+  // typography
+  color: $golden;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+
+  @include atDesktopM {
+    // typography
+    font-size: 1rem;
+  }
+}
+
+.article .note {
+  // box model
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 20px;
+  font-size: 1.125rem;
+
+  // typography
+  font-family: $titleFont;
+  text-indent: 0;
+
+  // borders
+  border-top: 2px solid $golden;
+  border-bottom: 2px solid $golden;
+
+  @include atTablet {
+    // box model
+    max-width: 300px;
+
+    &--left {
+      // box model
+      float: left;
+      margin-right: 20px;
+      margin-left: -20px;
+    }
+
+    &--right {
+      // box model
+      float: right;
+      margin-right: -20px;
+      margin-left: 20px;
+    }
+  }
+
+  @include atDesktopS {
+    // box model
+    padding: 1rem 2rem;
+
+    &--left {
+      // box model
+      margin: 1rem 2rem;
+      margin-left: -2rem;
+    }
+
+    &--right {
+      margin: 1rem 2rem;
+      margin-right: -2rem;
+    }
+  }
+
+  @include atDesktopM {
+    // box model
+    max-width: 400px;
+    padding-left: 3rem;
+
+    // typography
+    font-size: 1.25rem;
+
+    &--left {
+      // box model
+      margin-left: -6rem;
+    }
+
+    &--right {
+      margin-right: -6rem;
+    }
+  }
+}
+
+.article__list h4 {
+  // typography
+  text-align: left;
+}
+
+.article__caption {
+  // box model
+  width: 100%;
+  margin: 0 !important;
+
+  // typography
+  color: $golden;
+  text-align: center;
+}
+
+.article__button {
+  // typography
+  text-align: center;
+}
+.article__button .button {
+  // box model
+  margin-bottom: 0;
+}
+
+.article .clear-float {
+  clear: both;
+}
+
+.article__footer {
+  // box model
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 15px;
+
+  // visual
+  border-top: 2px solid $golden;
+}
+
+.article__footer-block {
+  // box model
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.article__footer-title {
+  // box model
+  margin: 0;
+
+  // typography
+  color: $golden;
+  font-size: 16px;
+  font-family: $mainFont;
+  line-height: 20px;
+}
+
+.article__footer-block .article__author,
+.article__footer-block .article__date {
+  // box model
+  margin: 0;
+  color: $grey;
+  font-size: 16px;
+
+  // typography
+  font-family: $titleFont;
+  line-height: 20px;
+}
+// .current-news__quote {
+
+//     @include atTablet {
+//         // box model
+//         height: 250px;
+//         margin-top: 0;
+//         padding-top: 30px;
+//     }
+
+//     @include atDesktopL {
+//         // box model
+//         margin-left: -150px;
+//         margin-right: -150px;
+//     }
+// }
+
+// .current-news__description {
+//     // box model
+//     margin: 0;
+//     margin-bottom: 30px;
+
+//     // typography
+//     color: $dark;
+//     font-family: $mainFont;
+//     font-size: 0.70rem;
+//     text-align: center;
+//     text-transform: uppercase;
+// }
+
+// .current-news__excerption {
+//     @include atTablet {
+//         // box model
+//         float: left;
+//         margin-right: 50px;
+//     }
+// }
+
+// .current-news__cta {
+//     // typography
+//     text-align: center;
+// }
+
+// .current-news__see-more {
+//     // box model
+//     margin: 0;
+
+//     // typography
+//     color: $dark;
+//     font-family: $titleFont;
+//     text-transform: uppercase;
+// }
+
+.article__print {
+  padding: 0;
+  list-style: none;
+}
+
+.article__print a {
+  color: $dark;
+  font-family: $titleFont;
+}

@@ -1,0 +1,24 @@
+.main-page__list {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.main-page__item {
+  position: relative;
+  padding-left: 40px;
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../images/deco/romb.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+  }
+}

@@ -8,7 +8,7 @@ export const path = {
     js: `${buildFolder}/js/`,
     css: `${buildFolder}/css/`,
     html: `${buildFolder}/`,
-    images: `${buildFolder}/img/`,
+    images: `${buildFolder}/images/`,
     fonts: `${buildFolder}/fonts/`,
     files: `${buildFolder}/files/`,
   },
@@ -16,7 +16,7 @@ export const path = {
     js: `${srcFolder}/js/index.js`,
     scss: `${srcFolder}/scss/style.scss`,
     html: `${srcFolder}/*.pug`,         // интересуют файлы html в папке с исходниками
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+    images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp,svg}`,
     svg: `${srcFolder}/img/**/*.svg`,
     svgicons: `${srcFolder}/svgicons/*.svg`,
     files: `${srcFolder}/files/**/*.*`,  // интересуют абсолютно все файлы в ./src/files/
@@ -25,7 +25,7 @@ export const path = {
     js: `${srcFolder}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/**/*.pug`,     // интересуют файлы html в папке с исходниками и в других подпапках src
-    images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
+    images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     files: `${srcFolder}/files/**/*.*`, // слежка за любыми файлами в папке с исходниками
   },
   clean: buildFolder,

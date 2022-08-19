@@ -1,0 +1,14 @@
+.menu-switcher {
+  z-index: 12;
+  background: rgba(210, 156, 78, 0.2);
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #D29C4E;
+  }
+
+  @include atDesktopS {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.pro-service-page__title {
+  margin: 0;
+  margin-bottom: 10px;
+  color: $golden;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: $titleFont;
+  text-align: center;
+}
+
+.pro-service-page__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pro-service-page__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: $titleFont;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #414141;
+  }
+}
+
+.pro-service-page__link {
+  color: #414141;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.pro-service-page__description {
+  margin: 0;
+  color: #868686;
+  font-weight: 400;
+  font-size: 16px;
+}

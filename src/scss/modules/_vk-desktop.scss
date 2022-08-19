@@ -1,0 +1,220 @@
+.vk-desktop {
+  position: relative;
+  width: 920px;
+  height: 735px;
+  background-image: url('./images/deco/leg-monitor.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: auto;
+}
+
+.vk-desktop__screen-wrap {
+  position: relative;
+  z-index: 1;
+  width: 920px;
+  height: 553px;
+  padding-top: 30px;
+  background-image: url('./images/deco/monitor-920.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.vk-desktop__screen {
+  position: relative;
+  width: 860px;
+  height: 490px;
+  margin: 0 auto;
+  background-color: $light-vk;
+}
+
+.vk-desktop__header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 80px;
+  background-color: $light;
+}
+
+.vk-desktop__logo {
+  font-size: 0px;
+}
+
+.vk-desktop__logo-img {
+  height: 24px;
+}
+
+.vk-desktop__header-search {
+  width: 200px;
+  height: 24px;
+  margin-left: 30px;
+  background-color: $light-vk;
+  border-radius: 4px;
+}
+
+.vk-desktop__header-round {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  margin-left: auto;
+  background-color: $blue-vk;
+  border-radius: 12px;
+}
+
+.vk-desktop__container {
+  padding: 0 80px;
+}
+
+.vk-desktop__block-top {
+  padding-top: 10px;
+}
+
+.vk-desktop__paper {
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.vk-desktop__paper-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px 4px $black;
+  }
+}
+
+.vk-desktop__paper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.vk-desktop__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background-color: $light;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.vk-desktop__avatar-wrap {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
+  background-color: $blue-vk;
+  border-radius: 23px;
+}
+
+.vk-desktop__avatar-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px 4px $black;
+  }
+}
+
+.vk-desktop__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.vk-desktop__avatar-text {
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+.vk-desktop__avatar-btn {
+  width: 156px;
+  height: 24px;
+  background-color: $blue-vk;
+  border-radius: 4px;
+}
+
+.vk-desktop__block-bot {
+  display: flex;
+  padding-top: 10px;
+}
+
+.vk-desktop__col-left {
+  width: 1200px;
+}
+
+.vk-desktop__item-top {
+  width: 100%;
+  height: 40px;
+  background-color: $light;
+  border-radius: 4px;
+}
+
+.vk-desktop__price-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 110px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px 0;
+  list-style: none;
+  background-color: $light;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.vk-desktop__price-item {
+  width: 110px;
+  height: 80px;
+  margin-left: 10px;
+  background-color: $blue-vk;
+  border-radius: 4px;
+}
+
+.vk-desktop__price-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.vk-desktop__price-list:hover .vk-desktop__price-link,
+.vk-desktop__price-list:focus .vk-desktop__price-link {
+  box-shadow: 0 0 5px 3px $black;
+}
+
+.vk-desktop__price-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vk-desktop__col-right {
+  width: 100%;
+  margin-left: 10px;
+  background-color: $light;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.vk-desktop__gallery {
+  width: 850px;
+}

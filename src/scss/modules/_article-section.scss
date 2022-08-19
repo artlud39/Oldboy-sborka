@@ -1,0 +1,13 @@
+.article-section__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $golden;
+  font-size: 20px;
+  text-align: center;
+
+  @include atTablet {
+    font-size: 30px;
+  }
+}
+
+

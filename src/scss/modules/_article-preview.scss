@@ -1,0 +1,110 @@
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  @include atTablet {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.article-preview__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-preview__title {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: $titleFont;
+  line-height: 1.2;
+}
+
+.article-preview__subtitle {
+  margin: 0;
+  padding: 0;
+  color: #868686 !important;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: $mainFont;
+  line-height: 19px;
+}
+
+.article-preview__data {
+  margin: 20px 0 0;
+  color: $lightGrey;
+  font-size: 14px;
+
+  @include atTablet {
+    padding-left: 60px;
+  }
+}
+
+.article-preview__icon {
+  align-self: flex-start;
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+
+  @include atTablet {
+    max-width: 170px;
+    max-height: 170px;
+  }
+
+  @include atDesktopM {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 0;
+  }
+}
+
+.article-preview__info {
+  align-self: center;
+}
+
+.article-preview__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: auto;
+  color: $golden;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: $mainFont;
+  line-height: 14px;
+  text-transform: uppercase;
+  border: 0;
+
+  @include atTablet {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  @include atTablet {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  &--download {
+    justify-content: flex-start;
+    font-size: 16px;
+  }
+}
+
+.article-preview__button-icon {
+  margin-left: 5px;
+}

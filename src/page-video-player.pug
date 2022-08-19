@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="en")
+  include html/modules/_head.pug
+
+  body
+    .wrapper
+      include html/modules/education/_header-search-education.pug
+      main
+        div.container
+            div.container__menu
+                include html/modules/education/_menu-education.pug
+            //- content
+            div.container__info
+                include html/modules/education/_navigation-chain.pug
+                include html/modules/education/_video.pug
+
+      include html/modules/_footer.pug
+//- script(src="main.js")
