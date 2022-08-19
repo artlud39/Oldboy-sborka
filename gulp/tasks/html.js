@@ -1,8 +1,8 @@
 import fileInclude from 'gulp-file-include'         // соединяет файлы между собой
-import webpHtmlNosvg from 'gulp-webp-html-nosvg'    // подключение форматов webp
+import webpHtmlNoSvg from 'gulp-webp-html-nosvg'    // подключение форматов webp
 import htmlMin from 'gulp-htmlmin'
+import pug from 'gulp-pug'                          // работа с pug, нужно закоменить .pipe(fileInclude())
 // import versionNumber from 'gulp-version-number'     // решает проблему с кешированием
-// import pug from 'gulp-pug'                          // работа с pug, нужно закоменить .pipe(fileInclude())
 
 export const html = () => {
   return app.gulp.src(app.path.src.html)
@@ -12,13 +12,13 @@ export const html = () => {
         message: 'Error: <%= error.message %>'
       })
     ))
-    .pipe(fileInclude())
-    // .pipe(pug({
-    //   pretty:true,
-    //   verbose:true,
-    // }))
+    // .pipe(fileInclude())
+    .pipe(pug({
+      pretty: true,
+      verbose: true,
+    }))
     .pipe(app.plugins.replace(/@img\//g, 'img/'))
-    .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
+    .pipe(app.plugins.if(app.isBuild, webpHtmlNoSvg()))
     // .pipe(app.plugins.if(app.isBuild, versionNumber({
     //   'value': '%DT%',
     //   'append': {
@@ -30,9 +30,18 @@ export const html = () => {
     //     'file': 'gulp/version.json'
     //   }
     // })))
-    .pipe(app.plugins.if(app.isBuild, htmlMin({
-      collapseWhitespace: true
-    })))
+    // .pipe(app.plugins.if(app.isBuild, htmlMin({
+    //   collapseWhitespace: true
+    // })))
     .pipe(app.gulp.dest(app.path.build.html))
     .pipe(app.plugins.browserSync.stream())
 }
+
+// 1)Установить path-autocomplete
+// 2)Добавить в в settings JSON
+// "path-autocomplete.pathMappings": {
+//   "@img": "${folder}/src/img",
+//   "@scss": "${folder}/src/scss",
+//   "@js": "${folder}/src/js",
+//   // "@": "src",
+// },

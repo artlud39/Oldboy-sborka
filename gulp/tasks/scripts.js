@@ -26,7 +26,6 @@ export const scripts = () => {
               // exclude: /node_modules/,
               options: {
                 presets: [
-                  // "@babel/env",
                   '@babel/preset-env',
                   "@babel/react"
                 ],

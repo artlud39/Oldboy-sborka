@@ -15,7 +15,7 @@ export const path = {
   src: {
     js: `${srcFolder}/js/index.js`,
     scss: `${srcFolder}/scss/style.scss`,
-    html: `${srcFolder}/*.html`,         // интересуют файлы html в папке с исходниками
+    html: `${srcFolder}/*.pug`,         // интересуют файлы html в папке с исходниками
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     svgicons: `${srcFolder}/svgicons/*.svg`,
@@ -24,7 +24,7 @@ export const path = {
   watch: {
     js: `${srcFolder}/js/**/*.js`,
     scss: `${srcFolder}/scss/**/*.scss`,
-    html: `${srcFolder}/**/*.html`,     // интересуют файлы html в папке с исходниками и в других подпапках src
+    html: `${srcFolder}/**/*.pug`,     // интересуют файлы html в папке с исходниками и в других подпапках src
     images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,svg,ico}`,
     files: `${srcFolder}/files/**/*.*`, // слежка за любыми файлами в папке с исходниками
   },
