@@ -14,14 +14,14 @@
   padding: 0 20px;
   padding-top: 45px;
   background-color: $black;
-  background-image: url("./images/deco/background-test-mobile.jpg");
+  background-image: url("../images/deco/background-test-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   @include atTablet {
     min-height: 522px;
-    background-image: url("./images/deco/background-test-tablet.jpg");
+    background-image: url("../images/deco/background-test-tablet.jpg");
   }
 
   @include atDesktopS {
@@ -33,7 +33,7 @@
   @include atDesktopM {
     padding-top: 130px;
     padding-bottom: 112px;
-    background-image: url("./images/deco/background-test-desktop.jpg");
+    background-image: url("../images/deco/background-test-desktop.jpg");
     background-size: cover;
   }
 }
@@ -55,7 +55,7 @@
     left: 0;
     width: 20px;
     height: 12px;
-    background-image: url("./images/icons/back-link-icon.svg");
+    background-image: url("../images/icons/back-link-icon.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: cover;

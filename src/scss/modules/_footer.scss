@@ -6,7 +6,7 @@
   padding: 20px 0;
   overflow: hidden;
   background-color: $dark;
-  background-image: url('../../images/deco/background-footer-mobile.jpg');
+  background-image: url('../images/deco/background-footer-mobile.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -14,12 +14,12 @@
   @include atTablet {
     justify-content: flex-end;
     padding: 40px 0;
-    background-image: url('../../images/deco/background-footer-tablet.jpg');
+    background-image: url('../images/deco/background-footer-tablet.jpg');
   }
 
   @include atDesktopS {
     min-height: 234px;
-    background-image: url('../../images/deco/background-footer-desktop.jpg');
+    background-image: url('../images/deco/background-footer-desktop.jpg');
   }
 }
 

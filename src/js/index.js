@@ -1,33 +1,29 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import isWebp from './components/is-webp.js'
+// import React from 'react'
+// import ReactDom from 'react-dom'
+import isWebp from './helper-functions/is-webp.js'
+import mobileMenuSwitcherWiki from "./modules/mobile-menu-switcher-wiki.js";
+import mobileMenuSwitcherEducation from "./modules/mobile-menu-switcher-education.js";
+import AnimateMenu from "./modules/menu.js";
+import EducationVideo from "./modules/education-video.js";
+import MenuEducationDropdown from "./modules/menu-education-dropdown.js";
+import NavigationChain from "./modules/navigation-chain.js";
+// import App from './components/App.js'
 
-import MobileMenuSwitcher from "./modules/mobileMenuSwitcher.js"
-// import AnimateMenu from "./modules/menu"
-import EducationVideo from "./modules/education-video.js"
-import MenuEducation from "./modules/menu-education.js"
-import NavigationChain from "./modules/navigation-chain.js"
-import App from './components/App.jsx'
+// isWebp();
+new AnimateMenu();
+new mobileMenuSwitcherWiki();
+new mobileMenuSwitcherEducation();
+const menuEducationDropdown = new MenuEducationDropdown();
+menuEducationDropdown.onItemClick();
+menuEducationDropdown.onSubItemClick();
 
-isWebp()
+const educationVideo = new EducationVideo();
+educationVideo.canPlay();
+educationVideo.canStop();
 
-// document.addEventListener('DOMContentLoaded', () => {
+const navigationChain = new NavigationChain();
+if (navigationChain.navigationItem.length > 0) navigationChain.hasActiveChain();
 
+// window.addEventListener('load', () => {
+//   ReactDom.render(<App />, document.getElementById('app-root'))
 // })
-new MobileMenuSwitcher()
-const educationVideo = new EducationVideo()
-educationVideo.canPlay()
-educationVideo.canStop()
-const navigationChain = new NavigationChain()
-navigationChain.hasActiveChain()
-
-// new AnimateMenu()
-
-const menuEducation = new MenuEducation()
-
-menuEducation.onItemClick()
-menuEducation.onSubItemClick()
-
-ReactDom.render(<App />, document.getElementById('app-root'))
-window.addEventListener('load', () => {
-})

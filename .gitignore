@@ -1,2 +1,8 @@
 node_modules
 dist
+.vs
+.DS_Store
+package-lock.json
+dist/**/*.html
+dist/**/*.css
+dist/**/*.js

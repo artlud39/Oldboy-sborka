@@ -1,0 +1,35 @@
+.container-education {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+
+  @include atDesktopS {
+    flex-direction: row;
+    min-height: 800px;
+  }
+
+  @include atDesktopL {
+    padding: 0;
+  }
+}
+
+.container__menu {
+  position: relative;
+
+  @include atDesktopS {
+    flex-grow: 1;
+    background-color: #fbf6ee;
+  }
+}
+
+.container__info {
+  position: relative;
+  padding: 80px 20px 30px 20px;
+
+  @include atDesktopS {
+    flex-grow: 2;
+  }
+}

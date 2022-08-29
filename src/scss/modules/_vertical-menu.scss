@@ -6,14 +6,14 @@
 /*Parent item*/
 #vertical-multilevel-menu a.parent {
   padding-right: 10px;
-  background: #f5f5f5 url(images/arrow.gif) center right no-repeat;
+  background: #f5f5f5 url('../images/arrow.gif') center right no-repeat;
 }
 
 /*Denied items*/
 #vertical-multilevel-menu a.denied {
   padding-right: 10px;
   color: #dddddd;
-  background: #f5f5f5 url(images/lock.gif) center right no-repeat;
+  background: #f5f5f5 url('../images/lock.gif') center right no-repeat;
 }
 
 /* Holly Hack. IE Requirement \*/
@@ -21,6 +21,7 @@
   float: left;
   height: 1%;
 }
+
 * html ul#vertical-multilevel-menu li a {
   height: 1%;
 }

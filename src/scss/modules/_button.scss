@@ -37,6 +37,12 @@
     opacity: 0.5;
     pointer-events: none;
   }
+  &--transparent {
+    width: 140px;
+    background: 0 0;
+    border: 2px solid $golden;
+    outline: none;
+  }
 }
 
 .button:hover {

@@ -7,7 +7,7 @@
   overflow: hidden;
   // visual
   background-color: $dark;
-  background-image: url('../../images/deco/background-header-mobile.jpg');
+  background-image: url('../images/deco/background-header-mobile.jpg');
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -17,14 +17,14 @@
     min-height: 300px;
     padding: 40px 0;
     // visual
-    background-image: url('../../images/deco/background-header-tablet.jpg');
+    background-image: url('../images/deco/background-header-tablet.jpg');
     background-position: 0 0;
   }
 
   @include atDesktopS {
     // visual
     min-height: 234px;
-    background-image: url('../../images/deco/background-header-desktop.jpg');
+    background-image: url('../images/deco/background-header-desktop.jpg');
     background-position: 0 0;
   }
 }
@@ -161,7 +161,7 @@
       width: 32px;
       height: 30px;
       // visual
-      background-image: url('../../images/icons/account.svg');
+      background-image: url('../images/icons/account.svg');
       background-repeat: no-repeat;
       background-position: center;
       // box model

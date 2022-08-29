@@ -11,8 +11,15 @@ export const scripts = () => {
     ))
     .pipe(webpack({
       mode: app.isBuild ? 'production' : 'development',
+      entry: {
+        main: './src/js/index.js',
+        constructor: './src/js/constructor.js',
+      },
+      // output: {
+      //   filename: 'main.min.js'
+      // },
       output: {
-        filename: 'main.min.js'
+        filename: '[name].js'
       },
       resolve: {
         extensions: ['.js', '.jsx', '.json', '.css', '.scss', '...'],

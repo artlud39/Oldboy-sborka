@@ -16,7 +16,7 @@ export const path = {
     js: `${srcFolder}/js/index.js`,
     scss: `${srcFolder}/scss/style.scss`,
     html: `${srcFolder}/*.pug`,         // интересуют файлы html в папке с исходниками
-    images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp,svg}`,
+    images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/img/**/*.svg`,
     svgicons: `${srcFolder}/svgicons/*.svg`,
     files: `${srcFolder}/files/**/*.*`,  // интересуют абсолютно все файлы в ./src/files/

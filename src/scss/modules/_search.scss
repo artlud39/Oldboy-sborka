@@ -6,10 +6,10 @@
   // typography
   color: $light;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 14px;
   font-family: $titleFont;
   font-style: normal;
-  line-height: 1.5em;
+  line-height: 14px;
   text-align: center;
   text-transform: uppercase;
 
@@ -36,8 +36,7 @@
   width: 100%;
   // box model
   height: 44px;
-  padding: 0 20px;
-  padding-right: 40px;
+  padding-left: 40px;
   // typography
   color: $greySearch;
   font-weight: 400;
@@ -45,19 +44,12 @@
   font-family: $titleFont;
   font-style: normal;
   line-height: 10px;
-  text-align: center;
   text-transform: uppercase;
   background: transparent;
   // visual
   border: 2px solid $browm;
   border-radius: 21px;
   outline: none;
-
-  &::placeholder {
-    color: #C4C4C4;
-    font-size: 12px;
-  }
-
   @include atDesktopS {
     // typography
     font-size: 13px;

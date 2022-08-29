@@ -30,36 +30,36 @@
 
   .navigation-chain__link {
     @include clearLinkDecoration();
+    color: $black;
     font-size: 12px;
     text-transform: uppercase;
-    color: $black;
 
     &:after {
-      content: "\2014";
       display: inline-block;
-      cursor: default;
       margin-left: 10px;
       color: $grey85;
-      opacity: 0;
       visibility: hidden;
+      cursor: default;
+      opacity: 0;
+      content: "\2014";
     }
   }
 
   .navigation-chain__item.navigation-chain__item--line-js {
     .navigation-chain__link {
       &:after {
-        opacity: 1;
         visibility: visible;
+        opacity: 1;
       }
     }
   }
 
   .navigation-chain__item.navigation-chain__item--prevent-default-js {
     .navigation-chain__link {
-      pointer-events: none;
-      cursor: default;
-      text-decoration: none;
       color: $grey85;
+      text-decoration: none;
+      cursor: default;
+      pointer-events: none;
     }
   }
 }

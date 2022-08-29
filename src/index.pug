@@ -1,3 +1,19 @@
+//- <!DOCTYPE html>
+//- html(lang="en")
+//-   include html/modules/_head.pug
+
+//-   body
+//-     include html/modules/_header-search.pug
+//-     main
+//-       div.container.container--large.container--flex
+//-         include html/modules/_menu.pug
+//-         div.container.container--middle
+//-           //- content
+//-           include html/modules/_main-page.pug
+
+//-     include html/modules/_footer.pug
+//- div(id="app-root")
+
 <!DOCTYPE html>
 html(lang="en")
   include html/modules/_head.pug
@@ -6,13 +22,13 @@ html(lang="en")
     .wrapper
       include html/modules/education/_header-search-education.pug
       main
-        div.container
+        div.container-education
           div.container__menu
             include html/modules/education/_menu-education.pug
           //- content
           div.container__info
             include html/modules/education/_navigation-chain.pug
-            //- include html/modules/education/_menu-page-education.pug
-            div(id="app-root")
+            include html/modules/education/_video.pug
+            //- include html/modules/_article-detail.pug
 
       include html/modules/_footer.pug

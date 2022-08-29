@@ -1,17 +1,23 @@
 {
-  "name": "high-pass",
-  "description": "gulp sborka 2022",
+  "name": "oldboy-wiki",
+  "description": "Site for Oldboy Wiki",
   "private": true,
   "main": "gulpfile.js",
   "type": "module",
+  "author": "Yanov Mikhail <yanovmikhailco@ya.ru>",
+  "license": "ISC",
+  "keywords": [],
+  "browserslist": [
+    "last 2 versions",
+    "ios >= 8"
+  ],
   "scripts": {
-    "dev": "gulp",
+    "start": "gulp",
     "build": "gulp build --build",
     "svgSprite": "gulp svgSprite",
     "zip": "gulp deployZip --build",
     "deploy": "gulp deployFtp --build"
   },
-  "author": "Mikhail <yanovmikhailco@ya.ru>",
   "devDependencies": {
     "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",

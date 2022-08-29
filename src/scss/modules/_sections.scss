@@ -10,14 +10,14 @@
   list-style: none;
 }
 
-.sections > ul {
+.sections>ul {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
   list-style: none;
 }
 
-.sections > ul > li {
+.sections>ul>li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -38,12 +38,13 @@
   &:focus {
     color: $browm;
   }
+
   &:active {
     opacity: 0.5;
   }
 }
 
-.sections > ul > li > a {
+.sections>ul>li>a {
   display: inline-block;
   width: 100%;
   padding-bottom: 10px;
@@ -58,7 +59,7 @@
   margin-top: 15px;
 }
 
-.sections > ul ul > li {
+.sections>ul ul>li {
   position: relative;
 
   &:last-of-type {
@@ -72,7 +73,7 @@
     display: block;
     width: 15px;
     height: 15px;
-    background-image: url('./images/deco/romb.svg');
+    background-image: url('../images/deco/romb.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

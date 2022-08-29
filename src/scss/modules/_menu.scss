@@ -1,4 +1,7 @@
 .menu {
+  // positioning
+  position: absolute;
+
   // box model
   display: flex;
   flex-direction: column;
@@ -9,6 +12,7 @@
   // visual
   background-color: #fbf6ee;
   border-radius: 10px;
+  transition: transform 0.25s ease;
 
   @include atDesktopS {
     // positioning
@@ -17,6 +21,7 @@
     // visual
     background-color: transparent;
     border: 30px solid transparent;
+    border-image: url('../images/deco/border-deco.svg') 40 round round;
     transform: translateX(0);
 
     &:after {

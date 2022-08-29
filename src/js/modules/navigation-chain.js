@@ -6,7 +6,6 @@ export default class NavigationChain {
   hasActiveChain() {
     if (this.navigationItem !== null) {
       if (this.navigationItem.length <= 1) {
-        console.log(1)
         this.navigationItem[0].classList.add('navigation-chain__item--prevent-default-js')
         this.navigationItem[0].classList.add('navigation-chain__item--mobile-active-js')
       } else {

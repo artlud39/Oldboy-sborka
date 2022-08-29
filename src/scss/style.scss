@@ -13,6 +13,7 @@
 // container
 @import 'modules/wrapper';
 @import 'modules/container';
+@import 'modules/container-education';
 @import 'modules/container-test';
 // button
 @import 'modules/button';
@@ -25,9 +26,9 @@
 @import 'modules/footer';
 // menu
 @import 'modules/menu';
-@import 'modules/new-menu';
 
 @import 'modules/menu-decor';
+@import 'modules/menu-decor-education';
 // page authorization
 @import 'modules/page-authorization';
 // authorization
@@ -44,6 +45,7 @@
 @import 'modules/article-detail';
 
 @import 'modules/menu-switcher';
+@import 'modules/menu-switcher-education';
 // constructor
 @import 'modules/constructor';
 // constructor vk-desctop

@@ -2,10 +2,10 @@
   .test-result__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 30px;
     color: $white;
-    font-family: $titleFont;
     font-weight: $fontWeightBold;
+    font-size: 30px;
+    font-family: $titleFont;
     text-align: center;
     text-transform: uppercase;
   }
@@ -13,12 +13,12 @@
   .test-result__passed {
     margin-top: 0;
     margin-bottom: 0;
-    font-family: $titleFont;
-    font-size: 18px;
-    font-weight: $fontWeightBold;
     color: $white;
-    text-transform: uppercase;
+    font-weight: $fontWeightBold;
+    font-size: 18px;
+    font-family: $titleFont;
     text-align: center;
+    text-transform: uppercase;
   }
 
   .test-result__passed--gold {
@@ -26,11 +26,11 @@
   }
 
   .test-result__group-passed {
+    display: grid;
+    justify-items: start;
     max-width: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    display: grid;
-    justify-items: start;
   }
 
   .test-result__passed--wrapper {
@@ -66,15 +66,15 @@
     max-width: 270px;
     margin: 0 auto;
     margin-bottom: 20px;
-    font-family: $mainFont;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: $black;
+    font-weight: $fontWeightBold;
+    font-size: 16px;
+    font-family: $mainFont;
+    text-transform: uppercase;
     background-color: $browm;
     border-radius: 25px;
-    text-transform: uppercase;
-    color: $black;
-    font-size: 16px;
-    font-weight: $fontWeightBold;
     transition: background-color .3s linear;
 
     &:hover {
@@ -83,18 +83,18 @@
   }
 
   .test-result__button-back-main {
-    font-family: $mainFont;
     width: 100%;
     max-width: 270px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 10px;
     color: $white;
-    font-size: 16px;
     font-weight: $fontWeightBold;
+    font-size: 16px;
+    font-family: $mainFont;
+    text-transform: uppercase;
     border: 2px solid $white;
     border-radius: 25px;
-    text-transform: uppercase;
     transition: background-color .3s linear;
 
     &:hover {
@@ -145,8 +145,8 @@
 }
 
 .test-page__question-overflow {
-  overflow: auto;
   height: 400px;
+  overflow: auto;
 
   @include atDesktopS {
     height: 470px;

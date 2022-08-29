@@ -20,7 +20,7 @@ import { scss } from './gulp/tasks/scss.js'
 import { scripts } from './gulp/tasks/scripts.js'
 import { images } from './gulp/tasks/images.js'
 import { svgSprite } from './gulp/tasks/svgSprite.js'
-import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js'
+// import { otfToTtf, ttfToWoff, fontsStyle } from './gulp/tasks/fonts.js'
 // import { zip } from './gulp/tasks/zip.js'
 // import { ftp } from './gulp/tasks/ftp.js'
 
@@ -54,5 +54,3 @@ export { svgSprite }
 
 // Cценарий по умолчанию
 gulp.task('default', dev)
-
-// Такой момент.. Если в gulpfile.js добавить  const { task, watch, parallel, series, src, dest } = gulp  и указать их в global.arg = {  path,  task, watch,  parallel, series, src,  dest,}? то везде вместо например  app.gulp.parallel  писать  app.parallel  . Хотя это на любителя, мне норм.

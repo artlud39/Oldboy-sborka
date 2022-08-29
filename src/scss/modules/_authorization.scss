@@ -21,13 +21,13 @@
     // box model
     margin-left: calc(20px + 2%);
     padding: 30px;
-    background-image: url('./images/deco/crown.svg');
+    background-image: url('../images/deco/crown.svg');
     background-repeat: no-repeat;
     background-position: bottom -27px right;
     background-size: 30%;
     // visual
     border: 30px solid transparent;
-    border-image-source: url('./images/deco/border-deco.svg');
+    border-image-source: url('../images/deco/border-deco.svg');
     border-image-slice: 30;
     border-image-repeat: round;
   }
@@ -131,7 +131,7 @@
     width: 23px;
     height: 23px;
     background-color: $browm;
-    background-image: url('./images/deco/check.svg');
+    background-image: url('../images/deco/check.svg');
     background-repeat: no-repeat;
     background-position: center;
 
@@ -141,7 +141,7 @@
   }
 }
 
-.authorization__input-checkbox:checked + .authorization__label--checkbox::after {
+.authorization__input-checkbox:checked+.authorization__label--checkbox::after {
   display: block;
 }
 
@@ -192,7 +192,7 @@
 
     width: 100%;
     // visual
-    background-image: url('./images/deco/map-deco.svg');
+    background-image: url('../images/deco/map-deco.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: calc(100% - 25%);

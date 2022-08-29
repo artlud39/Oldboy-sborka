@@ -1,31 +1,26 @@
 .header-search {
-  position: relative;
-  z-index: 10;
   // box model
-  min-height: 578px;
+  height: 263px;
+  margin-bottom: 60px;
   padding: 20px 0;
   overflow: hidden;
   // visual
   background-color: $dark;
-  background-image: url('../images/deco/background-header-mobile.jpg');
+  background-image: url('../images/deco/grunge-header.svg');
   background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: cover;
+  background-position: top 233px center;
 
   @include atTablet {
     // box model
-    min-height: 439px;
     padding: 40px 0;
     // visual
-    background-image: url('../images/deco/background-header-tablet.jpg');
-    background-position: 0 0;
+    background-image: url('../images/deco/grunge-header.svg'), url('../images/deco/background-header.jpg');
+    background-position: top 210px center, center;
   }
 
   @include atDesktopS {
     // visual
-    min-height: 234px;
-    background-image: url('../../images/deco/background-header-desktop.jpg');
-    background-position: 0 0;
+    background-position: top 230px center, center;
   }
 }
 
@@ -41,15 +36,10 @@
   @include atTablet {
     // box model
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
 
     padding: 0 40px;
-  }
-
-  @include atDesktopS {
-    flex-wrap: nowrap;
   }
 
   @include atDesktopL {
@@ -58,26 +48,29 @@
   }
 }
 
-.header-search__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// .header-search__logo {
+//   // box model
+//   margin-bottom: 20px;
+// }
 
+.header-search__logo--adaptive {
+  position: absolute;
+  top: 15px;
 
   @include atTablet {
-    margin-bottom: 0;
+    // box model
+    position: relative;
+    top: 0;
   }
 }
 
 .header-search__img {
   // box model
-  width: 145px;
-  height: 90px;
+  height: 64px;
 
   @include atTablet {
     // box model
-    width: 250px;
-    height: 134px;
+    height: 80px;
   }
 
   @include atDesktopS {
@@ -102,16 +95,14 @@
     flex-grow: 0;
     align-self: flex-start;
     // box model
+    order: 0;
     width: 600px;
     margin: 0 20px;
     padding-top: 21px;
   }
 
   @include atDesktopS {
-    flex-grow: 1;
     // box model
-    order: 0;
-    max-width: 500px;
     padding-top: 3px;
   }
 
@@ -122,18 +113,18 @@
 }
 
 .header-search__menu {
-  width: 100%;
+  width: 140px;
+  margin-left: auto;
 
   @include atTablet {
-    order: 0;
     // box model
-    width: 240px;
+    width: 180px;
     margin: 0;
   }
 
   @include atDesktopS {
     // box model
-    max-width: 270px;
+    width: 224px;
   }
 }
 

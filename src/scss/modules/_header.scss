@@ -6,7 +6,7 @@
   overflow: hidden;
   // visual
   background-color: $dark;
-  background-image: url('../../images/deco/grunge-header.svg');
+  background-image: url('../images/deco/grunge-header.svg');
   background-repeat: no-repeat;
   background-position: top 233px center;
 
@@ -14,7 +14,7 @@
     // box model
     padding: 40px 0;
     // visual
-    background-image: url('../../images/deco/grunge-header.svg'), url('../../images/deco/background-header.jpg');
+    background-image: url('../images/deco/grunge-header.svg'), url('../images/deco/background-header.jpg');
     background-position: top 210px center, center;
   }
 
@@ -75,7 +75,7 @@
     width: 32px;
     height: 30px;
     // visual
-    background-image: url('../../images/icons/account.svg');
+    background-image: url('../images/icons/account.svg');
     background-repeat: no-repeat;
     background-position: center;
     // box model

@@ -4,5 +4,6 @@ export const reset = () => {
   return del([
     `${app.path.clean}/**`,
     '!./dist/fonts',
+    '!./dist/images',
   ])
 }

@@ -1,14 +1,13 @@
+/* container */
+
 .container {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 1920px;
-  height: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 
-  @include atDesktopS {
-    flex-direction: row;
-    min-height: 800px;
+  @include atTablet {
+    padding: 0 40px;
   }
 
   @include atDesktopL {
@@ -18,12 +17,17 @@
   &--flex {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @include atTablet {
-      flex-direction: row;
-      align-items: flex-start;
       justify-content: space-between;
       margin: 0 auto;
+    }
+
+    @include atDesktopS {
+      flex-direction: row;
+      align-items: flex-start;
+
     }
 
     .menu--closed {
@@ -59,28 +63,7 @@
     }
   }
 
-  &--list>*+* {
+  &--list > * + * {
     margin-top: 30px;
-  }
-
-  .container__menu {
-    position: relative;
-  }
-}
-
-.container__menu {
-
-  @include atDesktopS {
-    background-color: #fbf6ee;
-    flex-grow: 1;
-  }
-}
-
-.container__info {
-  position: relative;
-  padding: 80px 20px 30px 20px;
-
-  @include atDesktopS {
-    flex-grow: 2;
   }
 }

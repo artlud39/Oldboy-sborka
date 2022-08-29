@@ -4,7 +4,9 @@ article.article-detail
 
   div.article-detail__content
     div.article-detail__img-wrap
-      img.article-detail__img(src="/images/article-img.jpg")
+      picture
+        //- source(srcset="images/article-img.webp")
+        img.article-detail__img(src="images/article-img.jpg" alt="Абонименты на мужскую стрижку")
 
     div.article-detail__info
       p.article-detail__info-desc Подарочные сертификаты с номиналом и без на мужскую стрижку, оформление бороды, королевское бритье, детскую стрижку и комплексные услуги.
@@ -26,7 +28,3 @@ article.article-detail
       li.article__doc
         span подарочный_сертификат_а3.pdf
         a Скачать
-
-
-
-
