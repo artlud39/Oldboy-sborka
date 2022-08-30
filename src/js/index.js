@@ -15,7 +15,6 @@ new mobileMenuSwitcherWiki();
 new mobileMenuSwitcherEducation();
 const menuEducationDropdown = new MenuEducationDropdown();
 menuEducationDropdown.onItemClick();
-menuEducationDropdown.onSubItemClick();
 
 const educationVideo = new EducationVideo();
 educationVideo.canPlay();

@@ -1,7 +1,7 @@
 class MenuEducationDropdown {
   constructor() {
-    this.menuCurrentItemsElements = document.querySelectorAll('.menu__item-inner');
-    this.menuSubItemsElements = document.querySelectorAll('.menu__sub-item');
+    this.menuCurrentItemsElements = document.querySelectorAll('.menu-education__item-toggle');
+    this.menuSubItemsElements = document.querySelectorAll('.menu-education__sub-item');
   }
 
   onItemClick() {
@@ -12,21 +12,11 @@ class MenuEducationDropdown {
         e.preventDefault();
         const parentElement = e.currentTarget.closest('.menu-education__item');
 
-        if (parentElement.classList.contains('menu__item--active-js')) {
-          parentElement.classList.remove('menu__item--active-js');
+        if (parentElement.classList.contains('menu-education__item--active-js')) {
+          parentElement.classList.remove('menu-education__item--active-js');
         } else {
-          parentElement.classList.add('menu__item--active-js');
+          parentElement.classList.add('menu-education__item--active-js');
         }
-      });
-    });
-  }
-
-  onSubItemClick() {
-    const menuSubItems = Array.from(this.menuSubItemsElements);
-
-    menuSubItems.forEach(subItem => {
-      subItem.addEventListener('click', e => {
-        e.preventDefault();
       });
     });
   }

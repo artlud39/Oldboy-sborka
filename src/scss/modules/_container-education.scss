@@ -18,10 +18,12 @@
 
 .container__menu {
   position: relative;
+  min-width: fit-content;
 
   @include atDesktopS {
     flex-grow: 1;
     background-color: #fbf6ee;
+
   }
 }
 
